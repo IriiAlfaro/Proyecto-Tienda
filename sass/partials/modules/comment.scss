@@ -1,0 +1,49 @@
+.comments {
+	@include outer-container;
+	@include span-columns(10);
+	@include shift(1);
+	
+	@media (min-width: 1024px)  {	
+		@include span-columns(10);
+		@include shift(2);
+	}
+
+	.comment-item {
+		@media (min-width: 1024px)  {
+			@include span-columns(5);
+			display: inline-block;
+			float: left;
+			
+		}
+	}
+}
+
+.comment-item {
+	@include span-columns(12);
+	border: 2px solid #E6CF8B;
+	margin: 10px 0;
+	overflow: hidden;
+	padding: 2%;
+
+	@media (min-width: 1024px)  {
+		margin: 10px 0;
+	}
+	
+	h3, h4 {
+		float: left;
+		color: #000;
+		margin: 2.5px 10px;
+		width: 70%; 
+	}
+
+	img{
+		float: left;
+		height: 50px;
+		width: 50px;
+	}
+
+	p {
+		padding-top: 20px;
+		width: 95%;
+	}
+}

@@ -1,83 +1,104 @@
 /*
  * Rules for base elements
  */
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,400italic|Lobster+Two:400,400italic);
 
 html {
-  font-size: 62.5%;
-}
-
-body {
-  margin: 0;
-}
-
-img {
-  width: inherit;
-  max-width: 100%;
-  height: auto;
-}
-
-p, li {
-  @include font-size(14);
-  color: #555;
-  line-height: 1.5;
-}
-
-p, ul, ol, dl {
-  margin: 0 0 0.5em 0;
-}
-
-ul, ol {
-  padding-left: 2em;
-}
-
-p {
-  overflow: hidden;
+    @include outer-container;
+    height: 100%
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+body {
+    @include outer-container;
+    height: 100%;
+    font-size: 16px;
+    margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
+
+button {
+    background-color: #fff;
+    border:none;
+    border-bottom: 1px solid #B56969;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+
+    &:hover {
+        color: #E6CF8B;
+        border-bottom: 1px solid #E6CF8B;
+    }
 }
 
+h1, h2, h3, h4, h5, h6 , button {
+    color: #B56969;
+    font-family: $title-font;
+    margin-top: 0;
+}
+
+img {
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    width: inherit;
+}
+
+p, li {
+    color: #555;
+    line-height: 1.5;
+}
+
+p, ul, ol, dl {
+    margin: 0 0 0.5em 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+p {
+    overflow: hidden;
+}
+
+a , p , span{
+    font-family: $main-font;
+}
+
+span {
+    color: #B56969;
+}
 // Tablas
 table {
-  width: 100%;
-  border-collapse: collapse;
-  @include font-size(14);
+    border-collapse: collapse;
+    @include span-columns(12);
 }
 
 th, td {
-  padding: 0.5em;
+    padding: 0.5em;
 }
 
 /*
  * Rules for base drupal elements
  */
 
-.element-invisible {
-  @extend %hidden;
-}
-
 // Tabs
 .tabs {
-  padding: 0;
-  overflow: hidden;
   border-bottom: 1px solid #ccc;
   margin: 10px 0;
+  overflow: hidden;
+  padding: 0;
+  
   li {
-    list-style-type: none;
     float: left;
+    list-style-type: none;
   }
   a {
     color: #333;
-    @include font-size(14);
     padding-right: 20px;
     &.active {
       color: #000;
@@ -88,4 +109,8 @@ th, td {
       text-decoration: none;
     }
   }
+}
+
+.hide {
+  display: none;
 }

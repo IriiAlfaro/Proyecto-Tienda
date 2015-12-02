@@ -15,3 +15,8 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+%mobile-position {
+	@include span-columns(10);
+	@include shift(1);
+}

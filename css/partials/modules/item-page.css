@@ -1,0 +1,137 @@
+.backwards {
+  background: url(../img/icons/leftArrow.png) no-repeat center center;
+  background-size: cover;
+  left: 10px; }
+
+.controls {
+  width: 100%;
+  z-index: 2; }
+  @media (min-width: 1300px) {
+    .controls {
+      display: none; } }
+  .controls a {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    height: 20px;
+    margin-top: 20%;
+    padding: 10px;
+    position: absolute;
+    width: 20px; }
+    .controls a:hover {
+      opacity: .7; }
+
+.description-item {
+  margin: 50px auto;
+  width: 95%; }
+  .description-item h2 {
+    border: 2px solid #B56969;
+    color: #B56969;
+    text-align: center;
+    padding: 20% 0; }
+    @media (min-width: 1024px) {
+      .description-item h2 {
+        border: none;
+        border-right: 2px solid #B56969;
+        float: left;
+        margin-right: 4%;
+        width: 50%; } }
+  .description-item h3 {
+    color: #22264B;
+    margin-top: 50px; }
+  @media (min-width: 1024px) {
+    .description-item > p {
+      float: left;
+      width: 45%; } }
+
+.details {
+  background-color: rgba(254, 254, 254, 0.8);
+  border-bottom: 1px solid #E8EDF3;
+  padding: 5% 2.5% 0;
+  width: 95%; }
+  @media (min-width: 1300px) {
+    .details {
+      float: right;
+      width: 45%; } }
+
+.detailed-item {
+  overflow: hidden; }
+  @media (min-width: 1300px) {
+    .detailed-item {
+      background: url(../img/items/item01.jpg) no-repeat center center;
+      background-size: cover;
+      filter: blur(1000px);
+      padding: 5%; } }
+  .detailed-item ul {
+    background-color: #000;
+    overflow: hidden;
+    padding: 0; }
+    @media (min-width: 1300px) {
+      .detailed-item ul {
+        float: left;
+        width: 45%; } }
+    .detailed-item ul li {
+      margin: 0 auto;
+      max-width: 600px;
+      top: 0; }
+      @media (min-width: 1300px) {
+        .detailed-item ul li {
+          max-width: none; } }
+  @media (min-width: 1300px) {
+    .detailed-item .item {
+      width: 30%;
+      display: inline-block; }
+      .detailed-item .item img {
+        width: 100%; } }
+  @media (min-width: 1300px) {
+    .detailed-item .selected-item {
+      width: 100%; } }
+
+.fowards {
+  background: url(../img/icons/rightArrow.png) no-repeat center center;
+  background-size: cover;
+  right: 10px; }
+
+.item {
+  display: none; }
+
+.other-items {
+  background-color: #22264B;
+  margin: 50px 0;
+  overflow: hidden; }
+  @media (min-width: 1024px) {
+    .other-items {
+      padding: 2% 5%; } }
+  @media (min-width: 1024px) {
+    .other-items .item {
+      display: inline-block; } }
+  .other-items .preview-item {
+    border-bottom: 1px solid #E8EDF3; }
+    @media (min-width: 1024px) {
+      .other-items .preview-item {
+        float: left;
+        width: 30%; } }
+    .other-items .preview-item:nth-child(3) {
+      margin: 0 5%; }
+    .other-items .preview-item h3 {
+      background-color: #fff;
+      margin: 0;
+      text-align: center;
+      padding: 20px 0; }
+  @media (min-width: 1024px) {
+    .other-items .controls {
+      display: none; } }
+
+.preview-item img {
+  width: 100%; }
+
+.selected-item {
+  display: block; }
+
+.video {
+  background-color: #fff;
+  display: none;
+  width: 100%; }
+  .video iframe {
+    width: 100%; }
+
+/*# sourceMappingURL=item-page.css.map */

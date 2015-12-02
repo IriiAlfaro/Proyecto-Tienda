@@ -1,0 +1,193 @@
+.backwards {
+	background: url(../img/icons/leftArrow.png) no-repeat center center;
+	background-size: cover;
+	left: 10px;
+}
+
+.controls {
+	@include span-columns(12);
+	z-index: 2;
+
+	@media (min-width: 1024px) {
+		display: none;
+	}
+
+	a {
+		background-color: rgba(0,0,0,.8);
+		border-radius: 50%;
+		height: 30px;
+		margin-top: 20%;
+		padding: 10px;
+		position: absolute;
+		width: 30px;
+	}
+}
+
+.description-item {
+	@include outer-container;
+	margin: 50px auto;
+
+	h2 {
+		@include span-columns(10);
+		@include shift(1);
+		border: 2px solid #B56969;
+		color: #B56969;
+		text-align: center;
+		padding: 15% 0;
+
+		@media (min-width: 1024px) {
+			@include span-columns(5);
+			@include shift(0);
+			border: none;
+			border-right: 2px solid #B56969;
+			float: left;
+		}
+	}
+
+	h3 {
+		color: #22264B;
+		margin-top: 50px;
+	}
+
+	.desctiption {
+		@include span-columns(10);
+		@include shift(1);
+
+		@media (min-width: 1024px) {
+			@include span-columns(7);
+			@include shift(0);
+			@include omega(2n);
+			float: right;
+		}
+	}
+}
+
+.details {
+	@include span-columns(12);
+	background-color: rgba(254,254,254,.8);
+	border-bottom: 1px solid #E8EDF3;
+	padding: 5% 2.5% 0;
+
+	@media (min-width: 1024px) {
+		@include span-columns(6);
+		padding: 5% 2.5% 25%;
+		float: right;
+
+	}
+}
+
+.detailed-item {
+	@include outer-container;
+	overflow: hidden;
+
+	@media (min-width: 1024px) {
+		background: url(../img/items/item01.jpg) no-repeat center center;
+		background-size: cover;
+		filter: blur(100px);
+		padding: 5%;
+	}
+
+	ul {
+		@include outer-container;
+		background-color: #000;
+		overflow: hidden;
+		padding: 0;
+
+		@media (min-width: 1024px) {
+			@include span-columns(6);
+			float: left;
+		}
+
+		li {
+			margin: 0 auto;
+			max-width: 600px;
+			top: 0;
+
+			@media (min-width: 1024px) {
+				max-width: none;
+			}
+		}
+	}
+
+	.item {
+		@media (min-width: 1024px) {
+			@include span-columns(4);
+			display: inline-block;
+
+			img {
+				width:100%;
+			}
+		}
+	}
+
+	.selected-item {
+		@media (min-width: 1024px) {
+			@include span-columns(12);
+		}
+	}
+}
+
+.fowards {
+	background: url(../img/icons/rightArrow.png) no-repeat center center;
+	background-size: cover;
+	right: 10px;
+}
+
+.item {
+	display: none;
+}
+
+.other-items {
+	@include span-columns(12);
+	background-color: #22264B;
+	overflow: hidden;
+
+	@media (min-width:1024px) {
+		@include span-columns(10);
+		@include shift(1);
+		padding: 2%;
+	}
+
+	.item {
+		@media (min-width: 1024px) {
+			display: inline-block;
+		}
+	}
+
+	.preview-item {
+		border-bottom: 1px solid #E8EDF3;
+
+		@media (min-width: 1024px) {
+			@include span-columns(4);
+			float: left;
+		}
+
+		h3 {
+			background-color: #fff;
+			margin: 0;
+			text-align: center;
+			padding: 20px 0;
+		}
+	}
+}
+
+.preview-item img {
+	width: 100%
+}
+
+.selected-item {
+	display: block;
+}
+
+.video {
+	@include outer-container;
+	@include span-columns(12);
+	@include omega(2n);
+	background-color: #fff;
+	display: none;
+	margin: 25px 0;
+
+	iframe {
+		@include span-columns(12);
+	}
+}

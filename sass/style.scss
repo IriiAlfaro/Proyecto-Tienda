@@ -10,8 +10,12 @@
 // Google fonts
 // ...
 
-// Parciales
+//modules
+@import "partials/modules/main-nav";
+@import "partials/modules/item-page";
+@import "partials/modules/comment";
 
+// Parciales
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/placeholders";
@@ -19,5 +23,3 @@
 @import "partials/layout";
 @import "partials/components/forms/forms";
 @import "partials/components/forms/webforms";
-
-// @import ...

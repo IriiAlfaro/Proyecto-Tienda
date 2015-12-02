@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Tienda</title>
     <meta name="description" content="Tienda de ropa"/>
     <meta name="keywords" content="Tienda Ropa"/>
@@ -11,64 +11,124 @@
   </head>
 
   <body>
-      <header>
-          <nav>
-              <a href="#">Home</a>
-              <a href="#">Categorias</a>
-              <a href="#">Cuenta</a>
-          </nav>
+    <header>
+      <a href="#menu-btn" class="menu-btn" id="menu-btn"><img src="img/icons/menu.png"></a>
+      <nav class="main-nav hide" id="main-nav">
+        <a href="#">Home</a>
+        <a href="#">Categorias</a>
+        <a href="#">Cuenta</a>
 
-          <nav class="social-nav">
-              <a href="#">fb</a>
-              <a href="#">tweet</a>
-              <a href="#">pinterest</a>
-          </nav>
-      </header>
+        <nav class="social-nav">
+          <a href="#"><img src="img/icons/social/facebook.png"></a>
+          <a href="#"><img src="img/icons/social/pinterest.png"></a>
+          <a href="#"><img src="img/icons/social/twitter.png"></a>
+        </nav>
+      </nav>
+    </header>
 
-      <section class="detailed-item">
-          <div class="previews-item">
-              <ul>
-                  <li><img src=""></li>
-                  <li><img src=""></li>
-                  <li><img src=""></li>
-                  <li><img src=""></li>
-              </ul>
-          </div>
+    <section class="detailed-item">
+      <div class="controls">
+        <a href="#" class="backwards" id="slider-item-back"></a>
+        <a href="#" class="fowards" id="slider-item-next"></a>
+      </div>
 
-          <div class="details">
-              <h2>nombre</h2>
-              <span>categoria</span>
-              <span>fabricagoadogn</span>
-              <span>precio</span>
-          </div>
-      </section>
+      <ul id="slider-item">
+        <li class="selected-item item"><a href="#"><img src="img/items/item01.jpg"></a></li>
+        <li class="item"><a href="#"><img src="img/items/item02.jpg"></a></li>
+        <li class="item"><a href="#"><img src="img/items/item03.jpg"></a></li>
+        <li class="item"><a href="#"><img src="img/items/item04.jpg"></a></li>
+      </ul>
 
-      <section class="description-item">
-          <h3>Descripcion</h3>
-          <div class="description">
-            <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. </p>
-          </div>
+      <div class="details">
+        <h2>Bici Atari</h2>
+        <p>Tipo de Item: <span>Bicicleta para carreras</span></p>
+        <p>Compañia: <span>Atari</span></p>
+     <p class="price">Price: <span>$789</span></p>
+      </div>
+    </section>
 
-          <div class="recent-review">
-              <!-- Esto se genera por medio de Json -->
-          </div>
+    <section class="description-item">
+      <h2>Descripción</h2>
 
-          <button>Ver video</button>
-      </section>
+      <div class="desctiption">
+        <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. </p>
 
-      <section class="video">
-          <iframe src="URL"></iframe>
-      </section>
-
-      <section class="comments">
+        <h3>Ultima reseña:</h3>
+        <a href="#comments">
           <div class="comment-item">
-              <img src="">
-              <h3>name</h3>
-              <img src="" class="calificacion">
-              <h4>titulo</h4>
-              <p>blah</p>
+            <img src="img/icons/avatar.png">
+            <h3>Usuario: <span>Dimitri</span></h3>
+            <h4>Titulo: <span>El regreso de Dimitri</span></h4>
           </div>
-      </section>
+        </a>
+      </div>
+      <button id="watchVideo">Ver video</button>
+    </section>
 
+    <section class="video">
+      <iframe src="URL"></iframe>
+    </section>
+
+    <section class="other-items" id="other-items">
+      <div class="controls">
+        <a href="#other-items" class="backwards" id="products-slider-back"></a>
+        <a href="#other-items" class="fowards" id="products-slider-next"></a>
+      </div>
+
+        <div class="preview-item item selected-item">
+          <a href="#">
+            <img src="img/items/item02.jpg">
+            <h3>Bici Nintendo</h3>
+          </a>
+        </div>
+
+        <div class="preview-item item">
+          <a href="#">
+            <img src="img/items/item03.jpg">
+            <h3>Bici Sonny</h3>
+          </a>
+        </div>
+
+        <div class="preview-item item">
+          <a href="#">
+            <img src="img/items/item04.jpg">
+            <h3>Bici Mricosoft</h3>
+          </a>
+        </div>
+
+    </section>
+
+    <section class="comments" id="comments">
+      <div class="comment-item">
+        <img src="img/icons/avatar.png">
+        <h3>Usuario: <span>Dimitri</span></h3>
+        <h4>Titulo: <span>El regreso de Dimitri</span></h4>
+        <p>Cliche selvage 90's tilde tempor, enim mollit PBR&B anim. VHS aute cold-pressed poutine. Swag pop-up consequat tote bag, master cleanse tilde leggings shabby chic sapiente XOXO butcher whatever pitchfork. Nulla deserunt kogi cold-pressed, scenester cornhole gastropub. Gentrify labore voluptate, distillery selvage lomo leggings helvetica minim.</p>
+      </div>
+
+      <div class="comment-item">
+        <img src="img/icons/avatar.png">
+        <h3>Usuario: <span>Dimitri</span></h3>
+        <h4>Titulo: <span>El regreso de Dimitri</span></h4>
+        <p>Cliche selvage 90's tilde tempor, enim mollit PBR&B anim. VHS aute cold-pressed poutine. Swag pop-up consequat tote bag, master cleanse tilde leggings shabby chic sapiente XOXO butcher whatever pitchfork. Nulla deserunt kogi cold-pressed, scenester cornhole gastropub. Gentrify labore voluptate, distillery selvage lomo leggings helvetica minim.</p>
+      </div>
+
+      <div class="comment-item">
+        <img src="img/icons/avatar.png">
+        <h3>Usuario: <span>Dimitri</span></h3>
+        <h4>Titulo: <span>El regreso de Dimitri</span></h4>
+        <p>Cliche selvage 90's tilde tempor, enim mollit PBR&B anim. VHS aute cold-pressed poutine. Swag pop-up consequat tote bag, master cleanse tilde leggings shabby chic sapiente XOXO butcher whatever pitchfork. Nulla deserunt kogi cold-pressed, scenester cornhole gastropub. Gentrify labore voluptate, distillery selvage lomo leggings helvetica minim.</p>
+      </div>
+
+      <div class="comment-item">
+        <img src="img/icons/avatar.png">
+        <h3>Usuario: <span>Dimitri</span></h3>
+        <h4>Titulo: <span>El regreso de Dimitri</span></h4>
+        <p>Cliche selvage 90's tilde tempor, enim mollit PBR&B anim. VHS aute cold-pressed poutine. Swag pop-up consequat tote bag, master cleanse tilde leggings shabby chic sapiente XOXO butcher whatever pitchfork. Nulla deserunt kogi cold-pressed, scenester cornhole gastropub. Gentrify labore voluptate, distillery selvage lomo leggings helvetica minim.</p>
+      </div>
+
+    </section>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
